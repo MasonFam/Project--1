@@ -34,6 +34,6 @@
 ### then finally reload Apache so these changes take effect using `sudi systemctl reload apache2`
 ## The website is now active, but it is still empty therefore we create an index.html file in the location so that we can test that the virtual host woeks as expected:
 `sudo echo 'Hello LAMP we done with you time to move on to the next stack from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/lampstack/index.html`
-### Nowwe can open our website url with our browser using IP address: [](http://3.91.23.14:80) or [DNS](www.ec2-3-91-23-14.compute-1.amazonaws.com)
-![website with Ip address](./Images/echo_output.png)
+### Now we can open our website url with our browser using IP address: [](http://3.91.23.14:80) or [DNS](www.ec2-3-91-23-14.compute-1.amazonaws.com)
+![wesite with IO address](./Images/echo_output-with_dns.png)
 ![website using dns](./Images/echo_output-with_dns.png)
